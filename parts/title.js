@@ -43,6 +43,11 @@ core.on('common', function () {
   clean = clean.replace(/_/g, ' ');
   clean = clean.replace(/([\(_]|- )$/, '').trim();
 
+  // attempt to fix title ending
+  if (["[", "]", ",", ".", "{", "}"].indexOf(clean.substr(-1)) !== -1) {
+      clean = clean.substr(0, clean.length - 1);
+  }
+
   core.emit('part', {
     name: 'title',
     raw: raw,

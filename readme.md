@@ -1,6 +1,7 @@
-# parse-torrent-name [![Build Status](https://travis-ci.org/jzjzjzj/parse-torrent-name.svg?branch=master)](https://travis-ci.org/jzjzjzj/parse-torrent-name) [![Code Climate](https://codeclimate.com/github/jzjzjzj/parse-torrent-name/badges/gpa.svg)](https://codeclimate.com/github/jzjzjzj/parse-torrent-name)
+# parse-torrent-name [![Build Status](https://travis-ci.org/tetreum/parse-torrent-name.svg?branch=master)](https://travis-ci.org/tetreum/parse-torrent-name) [![Code Climate](https://codeclimate.com/github/tetreum/parse-torrent-name/badges/gpa.svg)](https://codeclimate.com/github/tetreum/parse-torrent-name)
 
-Parses torrent name of a movie or TV show.
+Parses torrent file name of a movie or TV show.
+Updated version of https://github.com/jzjzjzj/parse-torrent-name
 
 **Possible parts extracted:**
 
