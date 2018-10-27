@@ -29,7 +29,7 @@ Updated version of https://github.com/jzjzjzj/parse-torrent-name
 
 ## Install:
 ```bash
-$ npm install parse-torrent-name
+$ npm install git+https://git@github.com/tetreum/parse-torrent-name.git
 ```
 
 ## Usage:
