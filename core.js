@@ -9,7 +9,7 @@ var Core = function() {
 
   this.getParts = function() {
       // movie name may be only a year
-      if (parts.title == "" || typeof parts.year !== "undefined") {
+      if (parts.title == "" && typeof parts.year !== "undefined") {
           parts.title = parts.year.toString();
       }
     return parts;

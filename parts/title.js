@@ -48,6 +48,13 @@ core.on('common', function () {
       clean = clean.substr(0, clean.length - 1);
   }
 
+  clean = clean.trim();
+
+  // GameOfThrones => Game Of Thrones (& ignore single uppercase cases like "Gamer")
+  if (clean.indexOf(" ") === -1 && ((clean.length - 1) - clean.substr(1).replace(/[A-Z]/g, '').length) >= 1) {
+      clean = clean.replace(/[A-Z]/g, (m) => { return " " + m;}).trim()
+  }
+
   core.emit('part', {
     name: 'title',
     raw: raw,

@@ -4,6 +4,19 @@ var ptn = require('./');
 var tape = require('tape');
 
 var torrents = [
+    {
+      name: "JuegoDeTronos [BluRayRIP 720p][Cap.301][www.newpct.com].mkv",
+      title: 'Juego De Tronos',
+      resolution: '720p',
+      quality: 'BluRay',
+      group: '][Cap.301][www.newpct.com].mkv',
+      excess: 'RIP'
+    },
+    {
+      name: "01.Agente 007 Contra El Doctor No 1962 M1080.www.newpct1.com.mkv",
+      year: 1962,
+      title: '01.Agente 007 Contra El Doctor No',
+    },
   {
     name: "El Sexto Dia.[HDRip][AC3][Torrentmas.com]",
     quality: 'HDRip',
@@ -34,7 +47,7 @@ var torrents = [
     widescreen: undefined,
     website: undefined,
     excess: undefined
-  },
+},
   {
     name: 'Hercules (2014) 1080p BrRip H264 - YIFY',
     title: 'Hercules',
@@ -115,7 +128,7 @@ var torrents = [
   },
   {
     name: 'Marvels Agents of S.H.I.E.L.D. S02E06 HDTV x264-KILLERS[ettv]',
-    title: 'Marvels Agents of S.H.I.E.L.D.'
+    title: 'Marvels Agents of S.H.I.E.L.D'
   },
   {
     name: 'Guardians of the Galaxy (CamRip / 2014)',
@@ -321,7 +334,7 @@ var torrents = [
   {
     name: 'Interstellar (2014) CAM ENG x264 AAC-CPG',
     quality: 'CAM',
-    excess: 'ENG'
+    language: 'ENG'
   },
   {
     name: 'Guardians of the Galaxy (2014) Dual Audio DVDRip AVI',
@@ -398,11 +411,73 @@ var torrents = [
     title: 'Community',
     season: 2,
     episode: 20,
-    language: 'rus.eng',
+    language: 'RUS',
+    language2: 'ENG',
     resolution: '720p',
     group: 'Kybik.v.Kybe',
     episodeName: undefined
-  }
+  },
+  {
+    name: 'Qu.est.Ce.Qu.on.A.Fait.Au.Bon.Dieu.2014.FRENCH.DVD',
+    year: 2014,
+    language: 'FRENCH',
+    title: 'Qu est Ce Qu on A Fait Au Bon Dieu'
+  },
+  {
+    name: 'The Equalizer 2014 FRENCH SUBFORCED BRRip XviD',
+    year: 2014,
+    quality: 'BRRip',
+    codec: 'XviD',
+    language: 'FRENCH',
+    title: 'The Equalizer',
+    excess: 'SUBFORCED'
+  },
+  {
+    name: 'Lucy (2014) [1080p] MULTi BluRay x264-PopHD',
+    year: 2014,
+    resolution: '1080p',
+    quality: 'BluRay',
+    codec: 'x264',
+    group: 'PopHD',
+    language: 'MULTI',
+    title: 'Lucy',
+    excess: '[]'
+  },
+  {
+    name: 'Fury.2014.FRENCH.BRRip.XviD-DesTroY',
+    year: 2014,
+    quality: 'BRRip',
+    codec: 'XviD',
+    group: 'DesTroY',
+    language: 'FRENCH',
+    title: 'Fury'
+  },
+  {
+    name: 'Gone.Girl.2014.FRENCH.BRRip.XviD-CARPEDIEM',
+    year: 2014,
+    quality: 'BRRip',
+    codec: 'XviD',
+    group: 'CARPEDIEM',
+    language: 'FRENCH',
+    title: 'Gone Girl'
+  },
+  {
+    name: 'Predestination 2014 TRUEFRENCH SUBFORCED BRRip.Xvid',
+    year: 2014,
+    quality: 'BRRip',
+    codec: 'Xvid',
+    language: 'TRUEFRENCH',
+    title: 'Predestination',
+    excess: 'SUBFORCED'
+  },
+  {
+    name: 'The Salvation French DVDRip XviD-UTT',
+    quality: 'DVDRip',
+    codec: 'XviD',
+    group: 'UTT',
+    language: 'FRENCH',
+    title: 'The Salvation'
+}
 ];
 
 torrents.forEach(function(torrent) {
