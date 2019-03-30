@@ -3,6 +3,8 @@
 Parses torrent file name of a movie or TV show.
 Updated version of https://github.com/jzjzjzj/parse-torrent-name
 
+Being used in https://github.com/tetreum/media-identifier
+
 **Possible parts extracted:**
 
 - audio
